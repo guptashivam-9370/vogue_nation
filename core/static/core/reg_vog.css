@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Slab&display=swap');
+
+@font-face {
+    font-family: 'Bosca';
+    src: url('./Bosca-Regular.ttf') format('truetype'),
+        /* Add additional font formats and paths if needed */
+}
+
+:root {
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Roboto Slab', serif;
+    --font3: 'Bosca';
+    --font4:  'Poppins', sans-serif;
+    --color1: #C6C4BF;
+    --color2: #24676F;
+    --color3: #65AAA1;
+    --color4: #A7A7A7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FFFBEF;
+    overflow-x: hidden;
+}
+.team_name{
+    margin: 18px 0 14px 0;
+    width: 79.30vw;
+}
+.iti__flag{
+    display: none;
+}
+.team_name h1{
+    margin-top: 1.25vw;
+    font-size: 3.33vw;
+    font-weight: 500;
+    font-family: var(--font1);
+    padding: 0.6vw 0vw;
+}
+
+.shivam_gupta{
+    background: none;
+    width: 34.16vw;
+    height: 5.90vw;
+    border: solid 0.069vw black;
+    font-size: 1.38vw;;
+}
+.container-1{
+    width: 100vw;
+    height: 10.27vw;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    width: 79.30vw;
+    height: 10.27vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container{
+    width: 13.61vw;
+    height: 4.08vw;
+}
+
+.logo{
+    width: 4.72vw;
+    height: 4.08vw;
+}
+
+.name{
+    font-size: 4.44vw;
+    font-weight: 500;
+    font-family: var(--font3);
+    color: var(--color2);
+}
+
+.back{
+    height: 3.88vw;
+    width: 13.61vw;
+    border-radius: 0.625vw;
+    border: solid 0.13vw var(--color2);
+    background-color: #C6C4BFB2;
+    font-size: 1.66vw;
+    font-weight: 400;
+    font-family: var(--font1);
+    color: var(--color2);
+}
+
+.back:hover{
+    cursor: pointer;
+    background-color: var(--color3);
+    transition: all 0.3s;
+}
+.iti__selected-flag{
+    padding: 0 0.83vw !important; 
+}
+.line{
+    height: 2.70vw;
+    width: 100vw;
+    border-top: solid var(--color2);
+}
+
+.events{
+    width: 100vw;
+    height: 6.59vw;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color2);
+}
+
+.events-name{
+    position: relative;
+    width: 21.38vw;
+    height: 3.40vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.competition:hover{
+    cursor: pointer;
+}
+.competition{
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+.active{
+    content: '';
+    height: 5px;
+    width: 21.38vw;
+    background: var(--color3);
+    border-radius: 0.2vw;
+    display: block;
+}
+
+.container-2{
+    height: 6.59vw;
+    width: 72.30vw;
+    display: flex;
+    flex-direction: row;
+    font-family: var(--font1);
+    font-size: 2.77vw;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.underline{
+    width: 21.38vw;
+    height: 0vw;
+    border: solid 0.2vw var(--color2);
+    border-radius: 0.1vw
+}
+
+.leader{
+    height: 10.90vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.leader-text{
+    height: 10.90vw;
+    width: 79.30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.txt-1{
+    font-size: 3.33vw;
+    font-weight: 500;
+    font-family: var(--font1);
+}
+
+.line-2{
+    width: 24.72vw;
+    height: 0.41vw;
+    border-top: solid 0.276vw var(--color3);
+}
+
+.txt-2{
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: 1.38vw;
+    color: var(--color4);
+}
+
+.hax{
+    font-size: 3.33vw;
+    font-weight: 500;
+    font-family: var(--font1);
+    display: inline;
+    border-bottom: solid 0.276vw var(--color3);
+
+}
+
+a{
+    color: red;
+    font-family: var(--font4);
+}
+
+.form-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box{
+    width: 79.30vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 13.8vw 13.8vw 13.8vw 13.8vw;
+}
+.form-box-1{
+    width: 79.30vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 13.8vw 13.8vw 13.8vw;
+}
+.align-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: last baseline;
+}
+
+.form-box div p{
+    font-family: var(--font1);
+    font-weight: 500;
+    font-size: 2.22vw;
+    color: var(--color2);
+}
+.form-box-1 div p{
+    font-family: var(--font1);
+    font-weight: 500;
+    font-size: 2.22vw;
+    color: var(--color2);
+}
+
+.input-box{
+    border: solid 1px #090603;
+    height: 5.90vw;
+    width: 34.16vw;
+    background: none;
+    box-sizing: border-box;
+    padding: 1.5vw;
+    font-size: 1.88vw;
+    font-family: var(--font1);
+    
+}
+
+.align-right i{
+    position: relative;
+    color: #24676F;
+}
+
+.grey{
+    color: var(--color4);
+    font-family: var(--font1);
+}
+
+.gap-1{
+    width: 100vw;
+    height: 0vw;
+}
+
+.member-container{
+    height: 13.95vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.member-box{
+    margin: 4vw 0vw;
+    height: 13.95vw;
+    width: 79.30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    height: 5.90vw;
+    width: 20.48vw;
+    border-radius: 0.48vw;
+    background-color: var(--color3);
+    color: white;
+    font-family: var(--font1);
+    font-size: 2.22vw;
+    font-weight: 500;
+    border: solid 0.069vw var(--color2);
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.register-box{
+    margin: 3.1vw 0vw;
+    height: 12.63vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-2{
+    height: 5.90vw;
+    width: 22.63vw;
+    background-color: var(--color2);
+    color: white;
+    font-family: var(--font1);
+    font-size: 2.22vw;
+    font-weight: 500;
+    border-radius: 0.55vw;
+    border: solid 0.069vw black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-2:hover{
+    cursor: pointer;
+}
+
+#add-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#press-2{
+    display: none;
+}
+
+.padding{
+    padding-top: 0.5vw;
+}
+
+@media (max-width: 600px){
+    .input-box{
+        border: solid 0.3px #090603;
+    }
+    .iti__arrow {
+        margin-left: 3px !important;
+    }
+    .iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
+        padding-left: 8.3vw !important;
+    }
+    .form-box-1{
+        height: auto;
+        grid-template-rows: 13.8vw 13.8vw 13.8vw;
+    }
+    .form-box{
+        height: auto;
+        grid-template-rows: 13.8vw 13.8vw 13.8vw 13.8vw;
+    }
+}
+
+select{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.img-set{
+    z-index: -1000;
+    height: 0.90vw;
+    width: 1.94vw;
+    position: relative;
+    right: -31vw;
+    bottom: 3.2vw;
+    display:run-in;
+}
+
+.img-set-2{
+    z-index: -1000;
+    height: 0.90vw;
+    width: 1.94vw;
+    position: relative;
+    right: 3.6vw;
+    bottom: -0.1vw;
+}
+
+.form-box-1 div{
+    font-size: 1.68vw;
+    font-family: var(--font1);
+}
+.form-box div{
+    font-size: 1.38vw;
+    font-family: var(--font1);
+}
+.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
+    padding-left: 6.5vw !important;
+}
+.iti__arrow {
+
+border-left: 0.45vw solid transparent !important;
+    border-right: 0.45vw solid transparent !important;
+    border-top: 0.45vw solid #555 !important;}
+.iti__arrow--up {
+    border-top: none !important;
+    border-bottom: .45vw solid #555 !important;
+}
+
+.comm::after{
+   content: "";
+  position: absolute;
+  bottom: -.52vw;
+  border: .25vw solid #65AAA1;
+  box-sizing: border-box;
+  width: 22.4vw;
+  border-radius: 3px;
+  z-index: 1000;
+}

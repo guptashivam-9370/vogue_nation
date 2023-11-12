@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@font-face {
+   font-family: 'Bosca';
+   src: url('./Bosca-Regular.ttf') format('truetype'),
+   /* Add additional font formats and paths if needed */
+}
+:root {
+   --font1: 'Montserrat', sans-serif;
+   --font2: 'Roboto Slab', serif;
+   --font3: 'Bosca';
+   --color1: #C6C4BF;
+   --color2:  #24676F;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+body{
+   background: #FFFBEF;
+   overflow-x: hidden;
+}
+
+.frst {
+   height: 10.88vw;
+   letter-spacing: 0.4vw;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+}
+
+.box-1 {
+   width: 83.85vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo {
+   height: 8.32vw;
+   width: 8.07vw;
+}
+
+.equal {
+   height: 8.32vw;
+   width: 14.47vw;
+}
+
+.head {
+   color:var(--color2);   ;
+   font-family: var(--font3);
+   line-height: 9.5vw;
+   font-weight: 500;
+   font-size: 5vw;
+}
+
+.register {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.67vw;
+   font-weight: 400;
+   height: 4.16vw;
+   width: 14.47vw;
+   background-color: var(--color1);
+   border-radius: 0.46vw;
+   border: none;
+   color:var(--color2);
+}
+
+.register:hover {
+   cursor: pointer;
+}
+
+.gap {
+   height: 0.98vw;
+   width: 100vw;
+}
+
+.box-2 {
+   width: 83.85vw;
+   height: 200px;
+}
+
+.nav_container {
+   height: 9.74vw;
+   width: 100vw;
+}
+
+.nav {
+   height: 3.02vw;
+   width: 100vw;
+}
+
+.nav ul {
+   height: 3.02vw;
+   width: 100vw;
+   box-sizing: border-box;
+   background-color: var(--color1);
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.nav ul li {
+   display: flex;
+   align-items: center;
+   list-style: none;
+   box-sizing: border-box;
+   height: 3.02vw;
+}
+
+.nav ul li a {
+   text-decoration: none;
+   font-family: var(--font1);
+   font-weight: 400;
+   font-size: 1.67vw;
+   color: white;
+   padding: 2vw 1.7vw;
+}
+
+#hamburger {
+   width: 10.26vw;
+   height: 6.71vw;
+   background-color:#b4ece6;
+   display: none;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   left: 36.4vw;
+   animation: events1 0.4s 1;
+}
+
+@keyframes events1 {
+   from {
+      height: 0vw;
+   }
+
+   to {
+      height: 6.71vw;
+   }
+}
+
+#hamburger a {
+   font-weight: 400;
+   font-size: 1.25vw;
+   text-decoration: none;
+   color: white;
+   font-family: var(--font2);
+}
+
+.line {
+   width: 9.8vw;
+   height: 0.1vw;
+   background-color: white;
+}
+
+#gap-2{
+   height: 2.23vw;
+   width: 100vw;
+}
+
+.blog-1{
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+}
+
+.box-3{
+   height: 100vh;
+   width: 83.85vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.img-bg-1{
+   border:3px solid var(--color2);
+   height: 37.70vw;
+   width: 32.23vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+}
+
+.img-1{
+   height: 35.36vw;
+   width: 28.07vw;
+   z-index: 2;
+   position: absolute;
+   left: 10.4vw;
+   top: 25.2vw;
+}
+
+.text-1{
+   height: 49vw;
+   width: 46.51vw;
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+}
+
+.text-1 h2{
+   font-weight: 700;
+   font-size: 5vw;
+   letter-spacing: 0.2rem;
+   text-align: right;
+   color: var(--color2);
+   font-family: var(--font3);
+}
+
+.text-1 h3{
+   font-weight: 300;
+   font-size: 2.5vw;
+   color:#65AAA1;
+   text-align: right;
+   font-family: var(--font3);
+}
+
+#h3-1{
+   padding-top: 0.8vw;
+}
+
+.text-1 p{
+   font-family: var(--font1);
+   font-weight: 400;
+   font-size: 1.52vw;
+   text-align: right;
+   padding: 0.2vw 0vw 0vw 14.06vw;
+   text-wrap: balance;
+   text-align: justify;
+   line-height: 1.85vw;
+}
+
+.img-bg-2{
+ height: 38.43vw;
+ width: 30.93vw;
+ border:solid var(--color2);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 1;
+}
+
+.img-2{
+ height: 33.97vw;
+ width: 27.34vw;
+ z-index: 3;
+ position: absolute;
+ left: 28.9vw;
+ top: 38.9vw;
+}
+
+.seperate{
+   position: absolute;
+   top: 36.5vw;
+   left: 26.93vw;
+}
+
+.gap-3{
+   width: 100vw;
+   height: 4.4vw;
+}
+
+.logo-gap{
+   height: 8.52vw;
+   width: 100vw;
+   justify-content: center;
+   display: flex;
+   justify-content: center;
+   align-items: end;
+}
+
+.triangle{
+   height: 6.31vw;
+   width: 8.38vw;
+}
+
+.gap-4{
+   height: 2.25vw;
+   width: 100vw;
+}
+
+.section-1{
+   height: 72.97vw;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.box-4{
+   width: 78.77vw;
+   height: 72.97vw;
+}
+
+.glamour-nova{
+   height: 8.63vw;
+   width: 78.77vw;
+   font-size: 5.52vw;
+   font-weight: 700;
+   color: var(--color2);
+   font-family: var(--font3);
+}
+
+.grid-box{
+   width: 78.77vw;
+   height: 51.62vw;
+   box-sizing: border-box;
+   display: grid;
+   grid-template-rows: 12.09vw 36.48vw;
+   grid-template-columns: 45.61vw 32.06vw;
+   grid-column-gap: 1.1vw;
+   grid-row-gap: 1.1vw;
+}
+
+.container{
+   border: solid var(--color2);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 400;
+}
+
+.container:first-child{
+   grid-row-start: 1;
+   grid-row-end: 3;
+}
+
+.no-border{
+   border: none;
+   font-size: 1.52vw;
+   text-align: justify;
+}
+
+.venue-container{
+   height: 11.12vw;
+   width: 78.77vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   box-sizing: border-box;
+}
+
+.venue-box{
+   height: 11.12vw;
+   width: 25.36vw;
+   box-sizing: border-box;
+   font-size: 1.38vw;
+   text-align:justify;
+   font-family: var(--font1);
+   font-weight: 500;
+}
+
+.venue-box h2{
+   text-align: center;
+   font-weight: 600;
+   color: var(--color2);
+}
+
+.rulebook-container{
+   height: 14.23vw;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.rulebook{
+   height: 5.66vw;
+   width: 34.62vw;
+   border-radius: 3.97vw;
+   border: 2px solid var(--color2);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.rulebook p{
+   font-size: 2.21vw;
+   font-family: var(--font1);
+   font-weight: 400;
+   color: var(--color2);
+}
+
+.gap-5{
+   height: 4.67vw;
+   width: 100vw;
+}
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.main_ {
+   background-color: #FFFBEF;
+   width: 100vw;
+}
+
+.container_ {
+   display: grid;
+   justify-content: center;
+   grid-template-columns: 45vw 32.22vw;
+   column-gap: 1.44vw; /* Converted from 16px to vw */
+}
+.subcontainer_ {
+   display: grid;
+   row-gap: 1.008vw; /* Converted from 14px to vw */
+}
+#heading_ {
+   height: 14vw; /* Converted from 140px to vw */
+}
+#heading1_ {
+   font-family: 'Bosca', sans-serif;
+   margin: auto auto auto 2.7vw; /* Converted from 30px to vw */
+}
+.box_ {
+   border: solid 0.2vw #24676F; /* Converted from 1px to vw */
+   height: 20.89vw; /* Converted from 200px to vw */
+}
+#box1_ {
+   height: 64.9vw; /* Converted from 649px to vw */
+}
+#box2_ {
+   height: 35.5vw; /* Converted from 355px to vw */
+}
+#box3_ {
+   height: 36.3vw; /* Converted from 363px to vw */
+}
+#box4_ {
+   height: 45.1vw; /* Converted from 451px to vw */
+}
+#box5_ {
+   height: 33vw; /* Converted from 330px to vw */
+}
+#heading_ {
+   font-size: 8.9vw; /* Converted from 100px to vw */
+   color: #24676F;
+}
+
+.container-2_ {
+   margin: auto 10.42vw; /* Converted from 150px to vw */
+}
+
+#footer_ {
+   display: flex;
+   justify-content: space-around;
+   width: 79.17vw; /* Converted from 1140px to vw */
+   position: relative;
+}
+
+.fbox_ {
+   width: 15.28vw; /* Converted from 220px to vw */
+   height: 14.79vw; /* Converted from 213px to vw */
+   background-color: #C7C7C780;
+   position: absolute;
+   bottom: 0px;
+}
+
+#rbox_ {
+   right: 0px;
+}
+
+#lbox_ {
+   left: 0px;
+}
+
+.t_ {
+   text-align: center;
+   font-size: 2.22vw; /* Converted from 32px to vw */
+   font-family: 'Roboto Slab', serif;
+   color: #65AAA1;
+}
+
+.img1_ {
+   display: flex;
+   justify-content: center;
+}
+
+.alcher-logo_ {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+#logo_ {
+   width: 15.833vw;
+}
+.stars_ {
+   margin-top: 7.08vw; /* Converted from 102px to vw */
+   display: flex;
+   column-gap: 1.11vw; /* Converted from 16px to vw */
+}
+.triangles_ {
+   display: flex;
+   margin: 3.88vw;
+   justify-content: center;
+   gap: 3vw;
+}
+.triangle_ {
+   height: 6.31vw;
+   width: 8.38vw;
+}
+.star_ {
+   width: 3.40vw; /* Converted from 49px to vw */
+}
+
+.strap_ {
+   margin-top: 3.47vw; /* Converted from 50px to vw */
+   background: #65AAA1;
+   height: 3.40vw; /* Converted from 49px to vw */
+}
