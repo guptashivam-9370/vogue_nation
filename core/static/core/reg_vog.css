@@ -403,7 +403,7 @@ select{
 }
 
 .form-box-1 div{
-    font-size: 1.68vw;
+    font-size: 1.38vw;
     font-family: var(--font1);
 }
 .form-box div{
@@ -411,7 +411,7 @@ select{
     font-family: var(--font1);
 }
 .iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
-    padding-left: 6.5vw !important;
+    padding-left: 7vw !important;
 }
 .iti__arrow {
 
