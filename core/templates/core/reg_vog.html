@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vogue Registration</title>
+    {% comment %} <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> {% endcomment %}
     <link rel="stylesheet" type="text/css "href="{% static "core/reg_vog.css" %} ">
     <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
 </head>
@@ -14,7 +15,7 @@
     <div class="container-1">
         <div class="header">
             <div class="logo-container"><img src="{% static "core/Group 19.png" %}" class="logo"></div>
-            <p class="name">REGISTRATIONS</p>
+            <p class="name_">REGISTRATIONS</p>
             <button class="back" id="item_">BACK</button>
         </div>
     </div>
@@ -33,7 +34,7 @@
             </div>
         </div>
     </div>
-    <form id="add-container" action="" method="post">
+    <form id="add-container" method="POST">
         {% csrf_token %}
         <div class="team_name">
             <h1 class="txt-1">Team Name&nbsp;<a>*</a></h1>
@@ -58,9 +59,9 @@
                 <div class="align-right">
                     <p>Gender&nbsp;<a>*</a></p>
                     <select  id="select" class="input-box" name="gender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="others">Others</option>
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                        <option value="o">Others</option>
                     </select>
                     <img class="img-set" src="{% static "core/Vector 6.png" %}" alt="">
                 </div>
@@ -107,9 +108,9 @@
             <div class="align-right">
                 <p>Gender&nbsp;<a>*</a></p>
                 <select  id="select" class="input-box" name="gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="others">Others</option>
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                    <option value="o">Others</option>
                 </select>
                 <img class="img-set" src="{% static "core/Vector 6.png" %}" alt="">
             </div>
@@ -117,7 +118,7 @@
                 <p>Contact Number&nbsp;<a>*</a></p><input id="phone-1" class="input-box" type="tel" name="Phone_Number">
             </div>
             <div class="align-right">
-                <p>Email ID&nbsp;<a>*</a></p><input class="input-box" type="email" name="Email">
+                <p>Email ID&nbsp;<a>z*</a></p><input class="input-box" type="email" name="Email">
             </div>
             <div>
                 <p>Role&nbsp;<a>*</a></p>
@@ -184,17 +185,17 @@ function addPage() {
     <div class="align-right">
         <p>Gender&nbsp;<a>*</a></p>
         <select name="gender" id="select" class="input-box">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="others">Others</option>
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                    <option value="o">Others</option>
                 </select>
                 <img class="img-set" src="{% static "core/Vector 6.png" %}" alt="">
     </div>
     <div>
-        <p>Contact Number&nbsp;<a>*</a></p><input id="phone-${count}" class="input-box" type="tel" name="phone_number">
+        <p>Contact Number&nbsp;<a>*</a></p><input id="phone-${count}" class="input-box" type="tel" name="Phone_Number">
     </div>
     <div class="align-right">
-        <p>Email ID&nbsp;<a>*</a></p><input class="input-box" type="email" name="email">
+        <p>Email ID&nbsp;<a>*</a></p><input class="input-box" type="email" name="Email">
     </div>
     <div>
         <p>Role&nbsp;<a>*</a></p>

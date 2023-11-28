@@ -76,7 +76,7 @@ body {
     height: 4.08vw;
 }
 
-.name{
+.name_{
     font-size: 4.44vw;
     font-weight: 500;
     font-family: var(--font3);
@@ -130,6 +130,7 @@ body {
 
 .competition:hover{
     cursor: pointer;
+    text-decoration: none;
 }
 .competition{
     color: white;
