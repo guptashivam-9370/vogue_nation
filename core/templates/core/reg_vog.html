@@ -15,7 +15,7 @@
     <div class="container-1">
         <div class="header">
             <div class="logo-container"><img src="{% static "core/Group 19.png" %}" class="logo"></div>
-            <p class="name_">REGISTRATIONS</p>
+            <p class="name-1">REGISTRATIONS</p>
             <button class="back" id="item_">BACK</button>
         </div>
     </div>
@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-    <form id="add-container" method="POST">
+    <form name="reg-form" id="add-container" method="POST">
         {% csrf_token %}
         <div class="team_name">
             <h1 class="txt-1">Team Name&nbsp;<a>*</a></h1>
@@ -66,7 +66,7 @@
                     <img class="img-set" src="{% static "core/Vector 6.png" %}" alt="">
                 </div>
                 <div>
-                    <p>Contact Number&nbsp;<a>*</a></p><input id="phone" class="input-box" type="tel" name="Phone_Number">
+                    <p>Contact Number&nbsp;<a>*</a></p><input id="phone" class="input-box phone1" type="tel" name="Phone_Number">
                 </div>
                 <div class="align-right">
                     <p>Email ID&nbsp;<a>*</a></p><input class="input-box" type="email" name="Email">
@@ -115,7 +115,7 @@
                 <img class="img-set" src="{% static "core/Vector 6.png" %}" alt="">
             </div>
             <div>
-                <p>Contact Number&nbsp;<a>*</a></p><input id="phone-1" class="input-box" type="tel" name="Phone_Number">
+                <p>Contact Number&nbsp;<a>*</a></p><input id="phone-1" class="input-box phone1" type="tel" name="Phone_Number">
             </div>
             <div class="align-right">
                 <p>Email ID&nbsp;<a>*</a></p><input class="input-box" type="email" name="Email">
@@ -144,6 +144,13 @@
         <button class="btn-2">REGISTER</button>
     </div>
 </form>
+<div class="black">
+    <div class="popup">
+        <div class="atn">Attention</div>
+        <div class="dis"></div>
+        <button id="cls">CLOSE</button>
+    </div>
+</div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
 <script>
@@ -192,7 +199,7 @@ function addPage() {
                 <img class="img-set" src="{% static "core/Vector 6.png" %}" alt="">
     </div>
     <div>
-        <p>Contact Number&nbsp;<a>*</a></p><input id="phone-${count}" class="input-box" type="tel" name="Phone_Number">
+        <p>Contact Number&nbsp;<a>*</a></p><input id="phone-${count}" class="input-box phone1" type="tel" name="Phone_Number">
     </div>
     <div class="align-right">
         <p>Email ID&nbsp;<a>*</a></p><input class="input-box" type="email" name="Email">
@@ -254,53 +261,35 @@ if (linkPage == com2.firstElementChild.pathname) {
 if (linkPage== com3.firstElementChild.pathname) {
     addClassOnClick(com3, com1, com2);
 }
-
-{% comment %} const linkPage = window.location.pathname;
-const com1 = document.getElementById("com1");
-const com2 = document.getElementById("com2");
-const com3 = document.getElementById("com3");
-function addClassOnClick(element1,element2,element3) {
-        element1.classList.add("comm");
-        element2.classList.remove("comm");
-        element3.classList.remove("comm");
+document.forms['reg-form'].onsubmit= function(event){
+    let nameInputs = document.querySelectorAll('input');
+    for (var i = 0; i < nameInputs.length; i++) {
+        if (nameInputs[i].value.trim() === "") {
+            document.querySelector(".dis").innerHTML = "Enter All necessary details Properly";
+            document.querySelector(".black").style.display = "block";
+            event.preventDefault();
+            return false;
+        }
+    }
+    var numInputs = document.querySelectorAll('input[type="tel"]');
+    for (var i = 0; i < numInputs.length; i++) {
+        if (isNaN(numInputs[i].value.trim())) {
+            document.querySelector(".dis").innerHTML = "Enter All necessary details Properly";
+            document.querySelector(".black").style.display = "block";
+            event.preventDefault();
+            return false;
+        }
+    }
 }
-activLinks.forEach(link => {
-    if (linkPage.includes(`com1.href`)) {
-        com1.classList.add('comm');
-    }
-    if (linkPage.includes(`com2.href`)) {
-        com2.classList.add('comm');
-    }
-    if (linkPage.includes(`com3.href`)) {
-        com3.classList.add('comm');
-    }
-}) {% endcomment %}
+const popup = document.querySelectorAll('.black')[0]
+popup.addEventListener("click", function(){
+    popup.style.display="none";
+});
 </script>
 <script>
     document.getElementById('item_').addEventListener('click', function() {
         window.location.href = '/';
-    });
-    {% comment %} document.addEventListener("DOMContentLoaded", function () {
-        // Get the elements for each competition
-        const com1 = document.getElementById("com1");
-        const com2 = document.getElementById("com2");
-        const com3 = document.getElementById("com3");
-    
-        // Function to add class 'comm' on click
-        function addClassOnClick(element1,element2,element3) {
-            element1.addEventListener("click", function () {
-                element1.classList.add("comm");
-                element2.classList.remove("comm");
-                element3.classList.remove("comm");
-    
-            });
-        }
-    
-        // Add event listeners to each competition
-        addClassOnClick(com1,com2,com3);
-        addClassOnClick(com2,com1,com3);
-        addClassOnClick(com3,com2,com1);
-    }); {% endcomment %}
-    
+    }); 
 </script>
+<script src="{% static 'core.reg_vog.css' %}></script>
 </html>
