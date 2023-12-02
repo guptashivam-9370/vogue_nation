@@ -358,25 +358,7 @@ a{
     padding-top: 0.5vw;
 }
 
-@media (max-width: 600px){
-    .input-box{
-        border: solid 0.3px #090603;
-    }
-    .iti__arrow {
-        margin-left: 3px !important;
-    }
-    .iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
-        padding-left: 8.3vw !important;
-    }
-    .form-box-1{
-        height: auto;
-        grid-template-rows: 13.8vw 13.8vw 13.8vw;
-    }
-    .form-box{
-        height: auto;
-        grid-template-rows: 13.8vw 13.8vw 13.8vw 13.8vw;
-    }
-}
+
 
 select{
     -webkit-appearance: none;
@@ -458,7 +440,7 @@ border-left: 0.45vw solid transparent !important;
 }
 .black{
     background-color: rgba(0,0,0,0.4);
-    display: none;
+    display: block;
     position: fixed;
     overflow: auto;
     width: 100%;
@@ -471,7 +453,7 @@ border-left: 0.45vw solid transparent !important;
     border: 1px solid black;
     border-radius: 20px;
     padding: 6px;
-    width: 56px;
+    width: 65px;
     bottom: 6px;
     transform: translate(-50%);
     margin-left: 50%;
@@ -488,4 +470,40 @@ border-left: 0.45vw solid transparent !important;
     text-align: center;
     color: white;
     font-size: 20px;
+}
+@media (max-width: 800px){
+    .popup{
+       width: 300px; 
+    }  
+}
+@media (max-width: 600px){
+    .popup{
+        width: 250px; 
+     }
+    .atn{
+        font-size: 18px;
+    }
+    #cls{
+        font-size: 11px;
+    }
+    .dis{
+        font-size: medium;
+    }
+    .input-box{
+        border: solid 0.3px #090603;
+    }
+    .iti__arrow {
+        margin-left: 3px !important;
+    }
+    .iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
+        padding-left: 8.3vw !important;
+    }
+    .form-box-1{
+        height: auto;
+        grid-template-rows: 13.8vw 13.8vw 13.8vw;
+    }
+    .form-box{
+        height: auto;
+        grid-template-rows: 13.8vw 13.8vw 13.8vw 13.8vw;
+    }
 }

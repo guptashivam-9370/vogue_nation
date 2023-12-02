@@ -12,7 +12,6 @@ function toggleShow(){
         dis=1;
     }
 }
-
 document.getElementById('menu').addEventListener("click",toggleShow);
 document.getElementById('item-3').addEventListener('click', function() {
     window.location.href = '/register/Houte_Couture';
