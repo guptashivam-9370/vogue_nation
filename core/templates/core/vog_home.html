@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>vogue</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="{% static "core/vog_home.css" %}">
 </head>
 
@@ -15,10 +14,10 @@
 
     <div class="box-1">
       <div class="equal">
-        <img class="logo" id="item-1" src="{% static "core/Group 149.png" %}">
+        <img class="logo" id="item-1" src="{%static "core/Group 19.png"%}">
       </div>
       <p class="head" id="item-2">VOGUE NATION</p>
-      <button class="register"  id="item-3">Register</button>
+      <button class="register" id="item-3">Register</button>
     </div>
 
   </div>
@@ -43,13 +42,6 @@
       </div>
     </div>
   </div>
-  {% if messages %}
-  {% for message in messages %}
-    <div class="alert alert-{{ message.tags }}">
-      {{ message }}
-    </div>
-  {% endfor %}
-{% endif %}
   <div id="gap-2">
   </div>
   <div class="blog-1">
@@ -114,7 +106,7 @@
     </div>
   </div>
   <div class="logo-gap">
-    <img class="triangle" src="{% static "core/Group 149.png" %}">
+    <img class="triangle" src={% static "core/Group 149.png" %}>
   </div>
   <div class="gap-5" id="States_of _Dress">
   </div>
@@ -231,8 +223,8 @@
                 <div id="power_" class="t_">
                     Presented to you by:
                 </div>
-                <div class="img1_">                        
-                  <img src="{% static "core/Logo_White.svg" %}"  id="logo_"
+                <div class="img1_"> 
+                     <img src="{% static "core/Logo_White.svg" %}" id="logo_">
                 </div>
                 <div id="t1_" class="t_">IIT GUWAHATI’S</div>
                 <div id="t2_" class="t_">ALCHERINGA 2024</div>
@@ -240,39 +232,15 @@
             <div id="rbox_" class="fbox_"></div>
         </div>
         <div class="stars_">
-            <img src="{% static "core/Star_1.svg" %}" alt="" class="star_">
-            <img src="{% static "core/Star_1.svg" %}" alt="" class="star_">
-            <img src="{% static "core/Star_1.svg" %}" alt="" class="star_">
-            <img src="{% static "core/Star_1.svg" %}" alt="" class="star_">
+            <img src="{%static "core/Star_1.svg"%}" alt="" class="star_">
+            <img src="{%static "core/Star_1.svg"%}" alt="" class="star_">
+            <img src="{%static "core/Star_1.svg"%}" alt="" class="star_">
+            <img src="{%static "core/Star_1.svg"%}" alt="" class="star_">
         </div>
     </div>
     <div class="strap_"></div>
 </div>
-  <script>
-    let menu = document.querySelector('#hamburger');
-var dis=1;
-
-function toggleShow(){
-    console.log("runed");
-    if(dis==1){
-        menu.style.display = 'flex';
-        dis=0;
-    }
-    else{
-        menu.style.display = 'none';
-        dis=1;
-    }
-}
-
-document.getElementById('menu').addEventListener("click",toggleShow);
-  </script>
-    <script>
-      document.getElementById('item-3').addEventListener('click', function() {
-          window.location.href = '/register/Houte_Couture';
-      });
-  </script>
+  <script src="{%static "core/vog_home_script.js"%}"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </html>
