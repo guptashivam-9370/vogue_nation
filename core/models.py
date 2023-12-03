@@ -37,6 +37,7 @@ class Member_Detail(models.Model):
     phone_number = models.IntegerField(validators=[MinValueValidator(limit_value=10)])
     your_city = models.CharField(max_length=1000000000)
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
+    team = models.ForeignKey(Team, on_delete=models.CASCADE)
     role = models.ForeignKey(Role, on_delete=models.CASCADE)
     Postal_code = models.IntegerField(null=True,blank=True)
     is_leader = models.BooleanField(default=False)

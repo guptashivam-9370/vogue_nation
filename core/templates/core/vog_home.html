@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>vogue</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="{% static "core/vog_home.css" %}">
   <link rel="stylesheet" href="{% static "core/vog_home_img.css" %}">
 </head>
@@ -44,8 +43,8 @@
       </div>
     </div>
   </div>
-  {% if messages %}
-  {% for message in messages %}
+  {% if messages.success %}
+  {% for message in messages.success %}
     <div class="alert alert-{{ message.tags }}">
       {{ message }}
     </div>
@@ -235,6 +234,7 @@
         <img class="triangle_" src="{% static "core/Group 149.png" %}">
         <img class="triangle_" src="{% static "core/Group 149.png" %}">
     </div>
+<<<<<<< HEAD
     <div class="container-2_">
         <div id="footer_">
             <div id="lbox_" class="fbox_"></div>
@@ -247,17 +247,51 @@
                 </div>
                 <div id="t1_" class="t_">IIT GUWAHATI’S</div>
                 <div id="t2_" class="t_">ALCHERINGA 2024</div>
+=======
+    <div class="container_2">
+      <div class="footer_1">
+        <div class="left">
+          <div class="con">Contact us</div>
+          <div class="face"><img src="{% static 'core/face.png' %}" class="face_con"></div>
+          <div id="email_" class="dis">pd@alcheringa.in</div>
+          <div id="number_" class="dis">+91 365124892</div>
+        </div>
+        <div class="mid">
+          <div id="logo_">
+            <img src="{% static 'core/Group 217.svg' %}" alt="" id="alc">
+          </div>
+          <div id="coll">IIT GUWAHATI’S</div>
+          <div id="title">ALCHERINGA</div>
+          <div id="copy">COPYRIGHT © 2024 ALCHERINGA. ALL RIGHTS RESERVED</div>
+          <div class="credit">Designed by Team Creatives. Developed by Team WebOps.</div>
+        </div>
+        <div class="right">
+          <div class="follow">
+            <div class="flw">Follow us</div>
+            <div class="sign">
+              <img src="{% static 'core/Group 218.svg' %}" alt="" class="sym">
+>>>>>>> 740d3c4950091a2e9744486f3d0b8e2c32f2bd4b
             </div>
-            <div id="rbox_" class="fbox_"></div>
+            <div class="sign">
+              <img src="{% static 'core/Group 219.svg' %}" alt=""
+                class="sym">
+            </div>
+            <div class="sign">
+              <img src="{% static 'core/Group 220.svg' %}" alt="" class="sym">
+            </div>
+            <div class="sign">
+              <img src="{% static 'core/Group 221.svg' %}" alt="" class="sym">
+            </div>
+            <div class="sign">
+              <img src="{% static 'core/Group 222.svg' %}" alt="" class="sym">
+            </div>
+            <div class="sign">
+              <img src="{% static 'core/Group 223.svg' %}" alt="" class="sym">
+            </div>
+          </div>
         </div>
-        <div class="stars_">
-            <img src="{% static "core/Star_1.svg" %}" alt="" class="star_">
-            <img src="{% static "core/Star_1.svg" %}" alt="" class="star_">
-            <img src="{% static "core/Star_1.svg" %}" alt="" class="star_">
-            <img src="{% static "core/Star_1.svg" %}" alt="" class="star_">
-        </div>
-    </div>
-    <div class="strap_"></div>
+      </div>
+    </div>    
 </div>
   <script>
     let menu = document.querySelector('#hamburger');
@@ -285,5 +319,4 @@ document.getElementById('menu').addEventListener("click",toggleShow);
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
