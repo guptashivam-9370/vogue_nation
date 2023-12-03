@@ -12,14 +12,6 @@ def register(request,competition_name):
         your_city = request.POST.get('your_city')
         competition = get_object_or_404(Competition,competition_name=competition_name)
         postal_code = request.POST.get('postal_code')
-        # Process team details
-        # if not team_name:
-        #     messages.error(request, "Team name is required")
-
-        # Validate city
-        # if not your_city:
-        #     messages.error(request, "City is required")
-        # Process member details
         names = request.POST.getlist('name')
         emails = request.POST.getlist('Email')
         phone_numbers = request.POST.getlist('Phone_Number')
@@ -30,7 +22,8 @@ def register(request,competition_name):
             team_name=team_name,
             competition=competition,          
         )
-        roles = Role.objects.all()
+        competitionss = Competition.objects.get(competition_name=competition_name)
+        roles = Role.objects.filter(competitions=competitionss)
         competitions = Competition.objects.all()
         role_counts = {}
         for i in range(len(names)):
@@ -39,11 +32,11 @@ def register(request,competition_name):
             phone_number = phone_numbers[i]
 
             # Validate name
-            print(phone_number.isdigit())
             if not name or not (email) or not phone_number or not team_name or  not phone_number.isdigit():
                 messages.error(request, f"Please enter All nessacary details properly")
 
                 return render(request, 'core/reg_vog.html', {
+                'competition' : competition_name,
                 'roles': roles,
                 'competitions': competitions,
                 })
@@ -59,6 +52,7 @@ def register(request,competition_name):
                 'roles': roles,
                 'competitions': competitions,
                 })
+        team.save()
         for i in range(num_participants):
             memberdetails = Member_Detail.objects.create(
                 name=names[i],
@@ -68,19 +62,21 @@ def register(request,competition_name):
                 gender=genders[i],
                 competition=competition,
                 role=role,
+                team=team,
                 Postal_code=postal_code if postal_code else None,
                 is_leader=(i == 0)  # First member is the leader
             )
             memberdetails.save()
-        team.save()
+        
 
         messages.success(request,f'you have successfully logged in')
         return redirect('Vogue-Home')
     
-    roles = Role.objects.all()
     competitions = Competition.objects.all()
-
+    competitionss = Competition.objects.get(competition_name=competition_name)
+    roles = Role.objects.filter(competitions=competitionss)
     return render(request, 'core/reg_vog.html', {
+        'competition' : competition_name,
         'roles': roles,
         'competitions': competitions,
     })
