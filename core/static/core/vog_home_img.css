@@ -7,13 +7,13 @@
 }
 
 #shift-1{
-    top: 34.05vw ;
-    left: 15.64vw;
+    top: 32.8vw ;
+    left: 16.25vw;
 }
 
 #shift-2{
     top: 36.65vw;
-    left: 27.102vw;
+    left: 28.252vw;
 }
 
 .image_1{
@@ -21,16 +21,16 @@
     height: 31.11vw;
     width: 24.51vw;
     z-index: 25;
-    left: 12vw;
-    top: 27vw;
+    left: 13.7vw;
+    top: 26.6vw;
 }
 .image_2{
     position: absolute;
     height: 31.11vw;
     width: 22.08vw;
     z-index: 55;
-    left: 31.5vw;
-    top: 40vw;
+    left: 30.85vw;
+    top: 39.3vw;
 }
 .image_3{
     height: 45.83vw;

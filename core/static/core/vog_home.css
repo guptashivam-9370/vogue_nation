@@ -345,7 +345,7 @@ body{
    grid-row-end: 3;
 }
 
-#no-border{
+.no-border{
    border: none;
    font-size: 1.52vw;
    text-align: justify;
