@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>vogue</title>
   <link rel="stylesheet" href="{% static "core/vog_home.css" %}">
+  <link rel="stylesheet" href="{% static "core/vog_home_img.css" %}">
 </head>
 
 <body>
@@ -29,8 +30,8 @@
         <ul>
           <li><a href="">HOME</a></li>
           <li><a id="menu" href="#">EVENTS</a></li>
-          <li><a href="">GALLERY</a></li>
-          <li><a href="">CONTACT US</a></li>
+          <li><a href="#gal">GALLERY</a></li>
+          <li><a href="#coll">CONTACT US</a></li>
         </ul>
       </navbar>
       <div id="hamburger">
@@ -67,6 +68,10 @@
       </div>
       <div class="img-bg-2 seperate">
       </div>
+      <div class="bg-box" id="shift-1"></div>
+      <div class="bg-box" id="shift-2"></div>
+      <img class="image_1" src="{% static "core/image 12.png" %}">
+      <img class="image_2" src="{% static "core/image 13.png" %}">
     </div>
   </div>
   <div class="gap-3"></div>
@@ -80,6 +85,7 @@
       <div class="spacing-adjust"><h2 class="glamour-nova">GLAMOUR NOVA</h2></div>
       <div class="grid-box">
         <div class="container">
+        <img class="image_3" src="{% static "core/image 10 (1).png" %}">
         </div>
         <div class="container" id="no-border">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit accusamus illum, eveniet facilis ratione
@@ -87,6 +93,7 @@
           delectus possimus deserunt!
         </div>
         <div class="container">
+        <img class="image_4" src="{% static "core/image 19.png" %}">
         </div>
       </div>
       <div class="venue-container">
@@ -122,6 +129,7 @@
       <div class="spacing-adjust"><h2 class="glamour-nova small-width">STATES OF DRESS</h2></div>
       <div class="grid-box-1">
         <div class="container">
+    <img class="image_3" src="{% static "core/image 24.png" %}">
         </div>
         <div class="container" id="no-border">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit accusamus illum, eveniet facilis ratione
@@ -129,6 +137,7 @@
           delectus possimus deserunt!
         </div>
         <div class="container">
+    <img class="image_4" src="{% static "core/image 19.png" %}">
         </div>
       </div>
       <div class="venue-container adjust-width">
@@ -164,6 +173,7 @@
       <div class="spacing-adjust"><h2 class="glamour-nova small-width">HOUTE COUTURE</h2></div>
       <div class="grid-box-1">
         <div class="container">
+      <img class="image_3" src="{% static "core/image 22.png" %}">
         </div>
         <div class="container" id="no-border">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit accusamus illum, eveniet facilis ratione
@@ -171,6 +181,7 @@
           delectus possimus deserunt!
         </div>
         <div class="container">
+      <img class="image_4" src="{% static "core/image 18.png" %}">
         </div>
       </div>
       <div class="venue-container adjust-width">
@@ -201,7 +212,7 @@
   </div>
   <div class="gap-5">
   </div>
-  <div class="main_">
+  <div class="main_" id="gal">
     <div class="container_">
         <div class="subcontainer_">
             <div id="heading_">
