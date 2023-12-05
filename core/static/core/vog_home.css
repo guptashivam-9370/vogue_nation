@@ -185,7 +185,7 @@ body{
 }
 
 .img-bg-1{
-   border: 3px solid var(--color2);
+   border: 0.208vw solid var(--color2);
    height: 36.42vw;
    width: 30.33vw;
    display: flex;
@@ -251,7 +251,7 @@ body{
 .img-bg-2{
  height: 36.97vw;
  width: 27.71vw;
- border:3px solid var(--color2);
+ border:0.208vw solid var(--color2);
  display: flex;
  justify-content: center;
  align-items: center;
