@@ -622,13 +622,16 @@ body{
    align-items: flex-end;
 }
 .sym{
-   margin-top: 0.5vw ;
+   margin-bottom: 1.5vw ;
    width: 2.7vw;
+}
+.sign{
+   font-size: 0px;
 }
 .flw{
    font-weight: 600;
    font-size: 2.2vw;
-   margin-bottom: 0.5vw;
+   margin-bottom: 1.2vw;
 }
 .sign a{
    border-radius: 50%;
