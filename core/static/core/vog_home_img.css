@@ -1,19 +1,14 @@
 .bg-box{
+    position: relative;
     height: 27.30vw;
     width: 24.51vw;
     z-index: 24;
-    position: absolute;
     background: #FFFBEF;
 }
 
 #shift-1{
-    top: 32.8vw ;
-    left: 16.25vw;
-}
-
-#shift-2{
-    top: 36.65vw;
-    left: 28.252vw;
+    position: relative;
+    z-index: 24888;
 }
 
 .image_1{

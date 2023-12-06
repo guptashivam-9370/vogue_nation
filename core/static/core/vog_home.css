@@ -189,8 +189,8 @@ body{
    height: 36.42vw;
    width: 30.33vw;
    display: flex;
-   justify-content: center;
-   align-items: center;
+   justify-content:end;
+   align-items:end;
    z-index: 1;
 }
 
@@ -251,11 +251,14 @@ body{
 .img-bg-2{
  height: 36.97vw;
  width: 27.71vw;
- border:0.208vw solid var(--color2);
  display: flex;
- justify-content: center;
- align-items: center;
- z-index: 1;
+ justify-content: start;
+ align-items: start;
+}
+
+.top-border{
+   border:0.208vw solid var(--color2);
+   border-image: linear-gradient(118.4deg,transparent 26.86%,var(--color2) 26.86%,var(--color2) 26.86%) 1;
 }
 
 .img-2{
@@ -268,6 +271,7 @@ body{
 }
 
 .seperate{
+   z-index: 3;
    position: absolute;
    top: 36.5vw;
    left: 28.05vw;
