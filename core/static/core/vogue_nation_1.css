@@ -13,7 +13,9 @@
    --color2:  #24676F;
    --color3: #65AAA1;
 }
-
+.imtop{
+   width: 100%;
+}
 * {
    margin: 0;
    padding: 0;

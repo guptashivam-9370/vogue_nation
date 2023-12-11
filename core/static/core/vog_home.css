@@ -465,33 +465,34 @@ body{
    row-gap: 1.008vw; /* Converted from 14px to vw */
 }
 #heading_ {
-   height: 14vw; /* Converted from 140px to vw */
+   height: 11.9vw; /* Converted from 140px to vw */
 }
 #heading1_ {
    font-family: 'Bosca', sans-serif;
    margin: auto auto auto 2.7vw; /* Converted from 30px to vw */
+   font-weight: 1000;
 }
 .box_ {
    border: solid 1px #24676F; /* Converted from 1px to vw */
    height: 20.89vw; /* Converted from 200px to vw */
 }
 #box1_ {
-   height: 64.9vw; /* Converted from 649px to vw */
+   height: 45vw; /* Converted from 649px to vw */
 }
 #box2_ {
-   height: 35.5vw; /* Converted from 355px to vw */
+   height: 24.6vw; /* Converted from 355px to vw */
 }
 #box3_ {
-   height: 36.3vw; /* Converted from 363px to vw */
+   height: 25.8vw; /* Converted from 363px to vw */
 }
 #box4_ {
-   height: 45.1vw; /* Converted from 451px to vw */
+   height: 32vw; /* Converted from 451px to vw */
 }
 #box5_ {
-   height: 33vw; /* Converted from 330px to vw */
+   height: 23.46vw; /* Converted from 330px to vw */
 }
 #heading_ {
-   font-size: 8.9vw; /* Converted from 100px to vw */
+   font-size: 8vw; /* Converted from 100px to vw */
    color: #24676F;
 }
 
@@ -627,6 +628,9 @@ body{
 }
 .sign{
    font-size: 0px;
+}
+.imtop{
+   width: 100%;
 }
 .flw{
    font-weight: 600;
