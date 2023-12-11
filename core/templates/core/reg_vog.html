@@ -7,13 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vogue Registration</title>
     {% comment %} <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> {% endcomment %}
-    <link rel="stylesheet" type="text/css "href="{% static "core/reg_vog.css" %} ">
+    <link rel="stylesheet" type="text/css" href="{% static "core/reg_vog.css" %} ">
     <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
-    {% comment %} <script>
-        {% if messages.error %}
-                document.querySelector(".black").style.display = "block";
-        {% endif %}
-    </script> {% endcomment %}
 </head>
 
 <body>
@@ -39,24 +34,14 @@
             </div>
         </div>
     </div>
-    {% if messages.error %}
-    {% for message in messages.error %}
-      <div class="alert alert-warning">
-        {{ message }}
-      </div>
-    {% endfor %}
-  {% endif %}
     <form name="reg-form" id="add-container" method="POST">
         {% csrf_token %}
         <div class="team_name">
             <h1 class="txt-1">Team Name&nbsp;<a>*</a></h1>
-            <input type="text" class="input-box" name="team_name">
+            <input type="text" class="input-box ibox" name="team_name">
         </div>
         <div class="leader">
             <div class="leader-text">
-                <!-- <div>
-                    <p>Team Name&nbsp;<a>*</a></p><input class="input-box" type="text" name="team_name">
-                </div> -->
                 <p class="txt-1">Leader Details</p>
                 <div class="line-2"></div>
                 <p class="txt-2">All feilds marked with&nbsp;<a>*</a>&nbsp;are mandatory</p>
@@ -66,7 +51,7 @@
         <div class="form-container">
             <div action="" class="form-box">
                 <div>
-                    <p>Name&nbsp;<a>*</a></p><input class="input-box" type="text" name="name">
+                    <p>Name&nbsp;<a>*</a></p><input class="input-box ibox" type="text" name="name">
                 </div>
                 <div class="align-right">
                     <p>Gender&nbsp;<a>*</a></p>
@@ -78,17 +63,17 @@
                     <img class="img-set" src="{% static "core/Vector 6.png" %}" alt="">
                 </div>
                 <div>
-                    <p>Contact Number&nbsp;<a>*</a></p><input id="phone" class="input-box phone1" type="tel" placeholder="01234 56789" name="Phone_Number">
+                    <p>Contact Number&nbsp;<a>*</a></p><input id="phone" class="input-box phone1 ibox" type="tel" placeholder="01234 56789" name="Phone_Number">
                 </div>
                 <div class="align-right">
-                    <p>Email ID&nbsp;<a>*</a></p><input class="input-box" type="email" name="Email">
+                    <p>Email ID&nbsp;<a>*</a></p><input class="input-box ibox" type="email" name="Email">
                 </div>
                 <div>
-                    <p>City&nbsp;<a>*</a></p><input class="input-box" type="text" name="your_city">
+                    <p>City&nbsp;<a>*</a></p><input class="input-box ibox" type="text" name="your_city">
                 </div>
                 <div class="align-right">
                     <p>Postal Code&nbsp;<a class="grey">(optional)</a></p>
-                    <input class="input-box" type="text" name="postal_code">
+                    <input class="input-box " type="text" name="postal_code">
                 </div>
                 <div>
                     <p>Role&nbsp;<a>*</a></p>
@@ -115,11 +100,11 @@
         <div class="form-container">
         <div action="" class="form-box-1 mem" name="myform">
             <div>
-                <p>Name&nbsp;<a>*</a></p><input class="input-box" type="text" name="name">
+                <p>Name&nbsp;<a>*</a></p><input class="input-box ibox" type="text" name="name">
             </div>
             <div class="align-right">
                 <p>Gender&nbsp;<a>*</a></p>
-                <select  id="select" class="input-box" name="gender">
+                <select  id="select" class="input-box ibox" name="gender">
                     <option value="m">Male</option>
                     <option value="f">Female</option>
                     <option value="o">Others</option>
@@ -127,10 +112,10 @@
                 <img class="img-set" src="{% static "core/Vector 6.png" %}" alt="">
             </div>
             <div>
-                <p>Contact Number&nbsp;<a>*</a></p><input id="phone-1" class="input-box phone1" type="tel" placeholder="01234 56789" name="Phone_Number">
+                <p>Contact Number&nbsp;<a>*</a></p><input id="phone-1" class="input-box phone1 ibox" type="tel" placeholder="01234 56789" name="Phone_Number">
             </div>
             <div class="align-right">
-                <p>Email ID&nbsp;<a>*</a></p><input class="input-box" type="email" name="Email">
+                <p>Email ID&nbsp;<a>*</a></p><input class="input-box ibox" type="email" name="Email">
             </div>
             <div>
                 <p>Role&nbsp;<a>*</a></p>
@@ -163,17 +148,13 @@
         <button id="cls">CLOSE</button>
     </div>
 </div> {% endcomment %}
-{% if messages %}
 <div class="black">
     <div class="popup">
         <div class="atn">Attention</div>
-            {% for message in messages %}
-                <div class="dis">{{ message }}</div>
-            {% endfor %}
+                <div class="dis"></div>
             <button id="cls">CLOSE</button>
     </div>
 </div>
-{% endif %}
 </body>
 <script>
 
@@ -217,7 +198,7 @@
         <div class="form-container">         
         <div action="" class="form-box-1 mem">
         <div>
-            <p>Name&nbsp;<a>*</a></p><input class="input-box" type="text" name="name">
+            <p>Name&nbsp;<a>*</a></p><input class="input-box ibox" type="text" name="name">
         </div>
         <div class="align-right">
             <p>Gender&nbsp;<a>*</a></p>
@@ -229,10 +210,10 @@
                     <img class="img-set" src="{% static "core/Vector 6.png" %}" alt="">
         </div>
         <div>
-            <p>Contact Number&nbsp;<a>*</a></p><input id="phone-${count}" class="input-box phone1" type="tel" placeholder="01234 56789" name="Phone_Number">
+            <p>Contact Number&nbsp;<a>*</a></p><input id="phone-${count}" class="input-box phone1 ibox" type="tel" placeholder="01234 56789" name="Phone_Number">
         </div>
         <div class="align-right">
-            <p>Email ID&nbsp;<a>*</a></p><input class="input-box" type="email" name="Email">
+            <p>Email ID&nbsp;<a>*</a></p><input class="input-box ibox" type="email" name="Email">
         </div>
         <div>
             <p>Role&nbsp;<a>*</a></p>
@@ -297,8 +278,11 @@
     popup.addEventListener("click", function(){
         popup.style.display="none";
     });
-    {% comment %} document.forms['reg-form'].onsubmit= function(event){
-        let nameInputs = document.querySelectorAll('input');
+    
+    document.forms['reg-form'].onsubmit= function(event){
+    
+        let nameInputs = document.querySelectorAll('.ibox');
+        // let phone = document.querySelectorAll('.name1');
         for (var i = 0; i < nameInputs.length; i++) {
             if (nameInputs[i].value.trim() === "") {
                 document.querySelector(".dis").innerHTML = "Enter All necessary details Properly";
@@ -316,6 +300,37 @@
                 return false;
             }
         }
-    } {% endcomment %}
+        var roleCount = {};
+        {% for role in roles  %}
+            roleCount[{{role.id}}] = 0;
+        {% endfor%}
+        console.log(roleCount);
+        const roleDropdowns = document.querySelectorAll('select[name="role"]');
+        
+            
+        // Iterate through each role dropdown
+        roleDropdowns.forEach((dropdown) => {
+            // Get the selected role value
+            const selectedRole = dropdown.value;
+
+            // If the selected role is not empty
+            if (selectedRole) {
+                // Increment the count for the selected role in the roleCount object
+                roleCount[selectedRole] = (roleCount[selectedRole] || 0) + 1;
+            }
+        });
+        console.log(roleCount);
+        {% for role in roles  %}
+            var name = "{{role.name_of_role}}";
+            var minmem = {{role.min_member}};
+            if (roleCount[{{role.id}}] < {{role.min_member}}){
+                document.querySelector(".dis").innerHTML = `The role ${name} requires at least ${minmem} participants`;
+                document.querySelector(".black").style.display = "block";
+            event.preventDefault();
+                return false;
+            }
+        {% endfor%}
+            console.log("After role count initialization");
+    }
 </script>
 </html>

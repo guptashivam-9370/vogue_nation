@@ -441,7 +441,7 @@ border-left: 0.45vw solid transparent !important;
 }
 .black{
     background-color: rgba(0,0,0,0.4);
-    display: block;
+    display: none;
     position: fixed;
     overflow: auto;
     width: 100%;
